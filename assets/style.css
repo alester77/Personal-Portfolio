@@ -1,0 +1,51 @@
+body {
+  background-color: aqua;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
+}
+
+h1 {
+  padding: 30px;
+  font-size: 250%;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  text-decoration: none;
+}
+
+nav li {
+  list-style: none;
+  padding: 20px;
+  font-weight: bolder;
+  font-size: 150%;
+}
+
+nav li a {
+  text-decoration: none;
+  color: purple;
+}
+
+img {
+  max-width: 20%;
+  height: auto;
+  border-radius: 50%;
+  border: 5px solid pink;
+}
+
+@media screen and (max-width:992px) {
+  body {
+    display: flex;
+    flex-wrap: wrap;
+  }
+} 
+
+@media screen and (max-width:768px) {
+  
+} 
+
+
+@media screen and (max-width:576px) {
+  
+} 
