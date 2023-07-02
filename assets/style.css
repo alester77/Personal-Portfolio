@@ -30,8 +30,45 @@ nav li a {
 img {
   max-width: 20%;
   height: auto;
-  border-radius: 50%;
-  border: 5px solid pink;
+}
+
+article {
+  display: flex;
+}
+
+.photo {
+  max-width: 15%;
+  height: auto;
+  border-radius: 100%;
+  border: 5px solid rgb(247, 17, 55);
+}
+
+h3 {
+  display: flex;
+  justify-content: space-around;
+}
+
+h3 a {
+  display: flex;
+  justify-content: space-around;
+}
+
+div a img{
+  border: 10px solid white;
+}
+
+.format-photo {
+  border: 5px solid white;
+  display: flex;
+}
+
+div .work-photos {
+  width: 800px;
+  height: 500px;
+  margin: 3.5%;
+  object-fit: cover;
+  border: 5px solid rgb(199, 8, 103);
+  justify-content: space-evenly;
 }
 
 @media screen and (max-width:992px) {
