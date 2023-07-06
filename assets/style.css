@@ -6,6 +6,7 @@ body {
 
 header {
   text-align: center;
+  padding: 50px;
 }
 
 h1 {
@@ -31,59 +32,73 @@ nav li a {
   color: #7B435B;
 }
 
-img {
-  min-width: 200px;
-  height: auto;
-}
-
 article {
-  display: flex;
+  display: grid;
+  place-items: center;
 }
 
 .photo {
-  max-width: 15%;
   height: auto;
-  min-height: 100px;
-  min-width: auto;
-  border-radius: 100%;
+  border-radius: 50%;
+  max-width: 500px;
+  margin: 3.5%;
   border: 5px solid #9FA0C3;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 h3 {
   display: flex;
   justify-content: space-around;
   font-size: 20px;
-  padding: 20px;
+  padding: 100px;
 }
 
 h4 {
   text-align: center;
 }
 
+.format-photo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
 div .work-photos {
+  border-radius: 10%;
   height: auto;
-  max-width: 25%;
+  max-width: 350px;
   margin: 3.5%;
   border: 5px solid #9FA0C3;
   flex: 2 1 auto;
-  
 }
 
 div .work-photos:hover {
+  transform: scale(1.1);
+  border-color: #7B435B;
+  max-width: 400px;
+  height: auto;
+}
+a[data-project] {
+  position: relative;
+  padding: 10px;
+}
+
+a[data-project]::before {
+  position: absolute;
+  content: attr(data-project);
+  z-index: 5;
+  font-size: 30px;
+  padding: 5px;
+  background-color: #f8f4f6;
+  border: 5px solid #ff006e;
+  color: #ff006e;
+  opacity: .9;
+  bottom: 380px;
   
 }
 
 @media screen and (max-width:992px) {
-  body {
-    
-  }
+  
 
-  img {
-    
-  }
 } 
 
 @media screen and (max-width:768px) {
