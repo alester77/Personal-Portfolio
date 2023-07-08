@@ -96,6 +96,20 @@ a[data-project]::before {
   
 }
 
+.contact-container {
+  display: flex;
+  flex-flow: row;
+  
+}
+
+.contact-info {
+  padding: 40px;
+}
+
+footer {
+  font-size: 30px;
+  text-align: center;
+}
 @media screen and (max-width:992px) {
   
 
