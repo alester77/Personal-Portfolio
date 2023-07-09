@@ -1,12 +1,23 @@
+:root {
+  --blue: #355070;
+  --lav: #6D597A;
+  --mauve: #B56576;
+  --pink: #E56B6F;
+  --tan: #EAAC8B;
+}
+
 body {
-  background-color: #BCF8EC;
+  background-color: var(--lav);
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  color: #7B435B;
+  color: var(--tan);
+  font-size: 25px;
 }
 
 header {
   text-align: center;
   padding: 50px;
+  background-color: #355070;
+  border: 5px double #E56B6F;
 }
 
 h1 {
@@ -29,7 +40,7 @@ nav li {
 
 nav li a {
   text-decoration: none;
-  color: #7B435B;
+  color: var(--tan);
 }
 
 article {
@@ -42,18 +53,20 @@ article {
   border-radius: 50%;
   max-width: 500px;
   margin: 3.5%;
-  border: 5px solid #9FA0C3;
+  border: 5px solid var(--pink);
 }
 
 h3 {
   display: flex;
   justify-content: space-around;
-  font-size: 20px;
+  font-size: 40px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   padding: 100px;
 }
 
 h4 {
   text-align: center;
+  font-size: 25px;
 }
 
 .format-photo {
@@ -67,13 +80,13 @@ div .work-photos {
   height: auto;
   max-width: 350px;
   margin: 3.5%;
-  border: 5px solid #9FA0C3;
+  border: 5px solid var(--pink);
   flex: 2 1 auto;
 }
 
 div .work-photos:hover {
   transform: scale(1.1);
-  border-color: #7B435B;
+  border-color: var(--mauve);
   max-width: 400px;
   height: auto;
 }
@@ -88,9 +101,9 @@ a[data-project]::before {
   z-index: 5;
   font-size: 30px;
   padding: 5px;
-  background-color: #f8f4f6;
-  border: 5px solid #ff006e;
-  color: #ff006e;
+  background-color: var(--tan);
+  border: 5px solid var(--mauve);
+  color: var(--blue);
   opacity: .9;
   bottom: 380px;
   
@@ -98,17 +111,25 @@ a[data-project]::before {
 
 .contact-container {
   display: flex;
-  flex-flow: row;
-  
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-info-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .contact-info {
-  padding: 40px;
+  padding: 10px
 }
 
 footer {
   font-size: 30px;
   text-align: center;
+  padding: 50px 0 20px 0;
+  font-size: 20px;
 }
 @media screen and (max-width:992px) {
   
@@ -125,5 +146,7 @@ footer {
 
 
 @media screen and (max-width:576px) {
-  
+  header {
+    text-align: center;
+  }
 } 
