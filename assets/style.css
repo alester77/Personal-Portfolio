@@ -1,3 +1,4 @@
+/* collection of colors used */
 :root {
   --blue: #355070;
   --lav: #6D597A;
@@ -84,6 +85,7 @@ div .work-photos {
   flex: 2 1 auto;
 }
 
+/* what makes the images change when you hover */
 div .work-photos:hover {
   transform: scale(1.1);
   border-color: var(--mauve);
@@ -95,6 +97,7 @@ a[data-project] {
   padding: 10px;
 }
 
+/* what adds title to photos */
 a[data-project]::before {
   position: absolute;
   content: attr(data-project);
@@ -115,6 +118,7 @@ a[data-project]::before {
   justify-content: center;
 }
 
+/* needed to make this in order for the text of the contact me info not to be wonky */
 .contact-info-container {
   display: flex;
   flex-direction: row;
@@ -147,6 +151,5 @@ footer {
 
 @media screen and (max-width:576px) {
   header {
-    text-align: center;
   }
 } 
