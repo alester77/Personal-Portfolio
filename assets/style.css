@@ -134,7 +134,7 @@ footer {
   font-size: 30px;
   text-align: center;
   padding: 50px 0 20px 0;
-  font-size: 20px;
+  font-size: 16px;
 }
 @media screen and (max-width:992px) {
   
@@ -159,7 +159,6 @@ footer {
     max-width: 80%;
     height: auto;
   }
-  Exp
 
   nav {
     display: flex;
