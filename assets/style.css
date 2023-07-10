@@ -29,6 +29,7 @@ h1 {
 nav {
   display: flex;
   justify-content: flex-end;
+  flex-wrap: wrap;
   text-decoration: none;
 }
 
@@ -52,7 +53,7 @@ article {
 .photo {
   height: auto;
   border-radius: 50%;
-  max-width: 500px;
+  max-width: 400px;
   margin: 3.5%;
   border: 5px solid var(--pink);
 }
@@ -78,7 +79,7 @@ h4 {
 
 div .work-photos {
   border-radius: 10%;
-  height: auto;
+  height: 350px;
   max-width: 350px;
   margin: 3.5%;
   border: 5px solid var(--pink);
@@ -141,15 +142,38 @@ footer {
 } 
 
 @media screen and (max-width:768px) {
+  header {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  article {
+    padding: 50px 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .photo {
+    max-width: 80%;
+    height: auto;
+  }
+  Exp
+
   nav {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    flex-wrap: wrap;
+    text-decoration: none;
   }
 } 
 
 
 @media screen and (max-width:576px) {
-  header {
+  .contact-info-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
   }
 } 
